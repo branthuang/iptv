@@ -1,0 +1,36 @@
+{
+    "name": "dadaodata/iptv",
+    "description": "iptv features",
+    "type": "metapackage",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dadaodata\\Iptv\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dadaodata\\Iptv\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dadaodata\\Iptv\\IptvServiceProvider"
+            ],
+            "aliases": {
+                "Iptv": "Dadaodata\\Iptv\\Facades\\IptvFacade"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "huangbaoming",
+            "email": "huangbm@dadaodata.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.5"
+    }
+}
